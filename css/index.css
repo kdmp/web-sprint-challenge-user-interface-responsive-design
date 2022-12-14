@@ -162,6 +162,8 @@ h1 {
 
 h2 {
   font-size: 6rem;
+  color: white;
+  text-align: center;
 }
 
 h3 {
@@ -343,8 +345,17 @@ footer {
   }
 }
 
-nav a {
+.header-nav a {
   color: white;
   font-size: 1.5rem;
-  padding-right: 0.1rem;
+  margin-right: 6rem;
+}
+
+.header-nav {
+  text-align: center;
+}
+
+section.gallery img {
+  max-width: 37rem;
+  margin: 1rem;
 }
