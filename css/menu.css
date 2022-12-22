@@ -378,6 +378,39 @@ footer {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .menu > div {
+    background-color: unset;
+  }
+
+  .menu * {
+    color: black;
+  }
+
+  .menu h2 {
+    border-style: solid;
+    border-width: 0px 0px 15px 0px;
+    width: fit-content;
+    margin: auto;
+    padding-top: 5rem;
+  }
+
+  .header-container {
+    height: 60vh;
+  }
+
+  .header-container nav i {
+    margin: 0 1rem 0 1rem;
+  }
+
+  h1 {
+    font-size: 4.7rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
   .header-title {
     width: 75%;
     margin: 0 auto;
