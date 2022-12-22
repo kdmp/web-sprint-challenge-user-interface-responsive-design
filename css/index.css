@@ -314,9 +314,26 @@ footer {
   .gallery {
     height: auto;
     padding-bottom: 50vh;
+    padding-bottom: unset;
+  }
+
+  .about {
+    width: 100%;
+    height: 100%;
   }
 
   /* about us section */
+  .about-container {
+    padding-top: 10rem;
+  }
+
+  .about-container h2 {
+    padding-bottom: 15rem;
+  }
+
+  .about-container h3 {
+    font-size: 5rem;
+  }
 
   /* contact us section */
   .contact h3 {
