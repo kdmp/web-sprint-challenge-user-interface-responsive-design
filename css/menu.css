@@ -282,12 +282,12 @@ nav a {
   padding-bottom: 0;
   padding-top: 0;
 }
-.grid-item {
+div.grid-item {
   padding: 5rem;
   text-align: center;
 }
 
-.grid-item p {
+div.grid-item p {
   font-size: 2.2rem;
   text-align: left;
   padding-bottom: 2rem;
@@ -300,6 +300,10 @@ nav a {
 }
 .right {
   float: right;
+}
+
+.no-pad {
+  padding: unset;
 }
 
 .desserts {
@@ -382,6 +386,10 @@ footer {
     grid-template-columns: auto;
   }
 
+  .grid-item * {
+    display: grid;
+  }
+
   .menu > div {
     background-color: unset;
   }
@@ -398,76 +406,44 @@ footer {
     padding-top: 5rem;
   }
 
-  .header-container {
-    height: 60vh;
-  }
-
-  .header-container nav i {
-    margin: 0 1rem 0 1rem;
-  }
-
-  h1 {
-    font-size: 4.7rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
-  }
-  .header-title {
-    width: 75%;
-    margin: 0 auto;
+  .menu h3 {
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
     text-align: center;
-    font-size: 4rem;
+    margin-bottom: 3vh;
+  }
+
+  .menu h4 {
+    font-size: 3.5rem;
+  }
+
+  div.grid-item p {
+    text-align: center;
+  }
+
+  .desserts {
+    width: unset;
+    margin: 0 5rem 0 5rem;
+  }
+
+  .menu p {
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    /* width: fit-content; */
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .menu p:last-child {
+    border: unset;
   }
 
   /* menu */
   .menu {
     background-image: none;
     background-color: white;
-  }
-
-  /* footer section */
-  footer {
-    height: auto;
-    padding-top: 2.5vh;
-    font-size: 2rem;
-  }
-
-  footer * {
-    text-align: center;
-  }
-
-  footer button {
-    width: 100%;
-  }
-
-  .footer-container nav a {
-    margin: unset;
-    display: block;
-  }
-
-  .footer-container .sign-up p {
-    padding: unset;
-  }
-
-  .sign-up-input input {
-    width: 100%;
-  }
-
-  .copyright {
-    padding: unset;
-    text-align: center;
-    padding-top: 3rem;
-  }
-
-  .footer-container nav {
-    margin: auto;
-  }
-
-  .footer-container .sign-up {
-    width: 100%;
-    padding: 3rem;
-  }
-
-  .footer-container {
-    display: unset;
   }
 }
