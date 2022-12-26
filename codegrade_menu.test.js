@@ -10,7 +10,7 @@ const html = fs.readFileSync(path.resolve(__dirname, "./menu.html"), "utf8");
 let dom;
 let container;
 
-describe.skip("menu.html", () => {
+describe("menu.html", () => {
   beforeEach(() => {
     // Constructing a new JSDOM with this option is the key
     // to getting the code in the script tag to execute.
